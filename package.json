@@ -1,0 +1,15 @@
+{
+  "name": "startproject",
+  "version": "1.0.0",
+  "description": "It's the starting template.",
+  "main": "gulpfile.js",
+  "author": "Ivan Kazantsev",
+  "license": "ISC",
+  "scripts": {
+    "dev": "gulp dev"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "gulp": "^4.0.0"
+  }
+}

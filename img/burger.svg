@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+              "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="30px" height="16px"
+     viewBox="0 0 45 32">
+  <linearGradient id="fill" gradientUnits="userSpaceOnUse"
+   x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(65)">
+    <stop offset="0%" stop-color="#ff2f96"/>
+    <stop offset="100%" stop-color="#ff8f5a"/>
+  </linearGradient>
+  <path id="burger"
+        fill="url(#fill)"
+        d="M 0.00,6.00
+           C 0.00,6.00 45.00,6.00 45.00,6.00
+             45.00,6.00 45.00,0.00 45.00,0.00
+             45.00,0.00 -0.00,0.00 -0.00,0.00
+             -0.00,0.00 0.00,6.00 0.00,6.00 Z
+           M 0.00,13.00
+           C 0.00,13.00 45.00,13.01 45.00,13.01
+             45.00,13.01 45.00,19.00 45.00,19.00
+             45.00,19.00 0.00,18.99 0.00,18.99
+             0.00,18.99 0.00,13.00 0.00,13.00 Z
+           M -0.00,26.00
+           C -0.00,26.00 45.00,26.00 45.00,26.00
+             45.00,26.00 45.00,31.99 45.00,31.99
+             45.00,31.99 -0.00,32.00 -0.00,32.00
+             -0.00,32.00 -0.00,26.00 -0.00,26.00 Z" />
+</svg>
