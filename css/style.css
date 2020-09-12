@@ -1,12 +1,8 @@
-/* roboto-100 - latin_cyrillic */
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 100;
-  src: local('Roboto Thin'), local('Roboto-Thin') url('../fonts/roboto-v20-latin_cyrillic-100.woff2') format('woff2'),
-    /* Super Modern Browsers */
-    url('../fonts/roboto-v20-latin_cyrillic-100.woff') format('woff'),
-    /* Modern Browsers */
+  src: local('Roboto Thin'), local('Roboto-Thin'), url('../fonts/roboto-v20-latin_cyrillic-100.woff2') format('woff2'), url('../fonts/roboto-v20-latin_cyrillic-100.woff') format('woff');
 }
 
 @font-face {
@@ -16,64 +12,44 @@
   src: url("../fonts/icomoon.woff") format('woff');
 }
 
-/* roboto-300 - latin_cyrillic */
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
   src: local('Roboto Light'), local('Roboto-Light'),
-    url('../fonts/roboto-v20-latin_cyrillic-300.woff2') format('woff2'),
-    /* Super Modern Browsers */
-    url('../fonts/roboto-v20-latin_cyrillic-300.woff') format('woff'),
-    /* Modern Browsers */
+    url('../fonts/roboto-v20-latin_cyrillic-300.woff2') format('woff2'), url('../fonts/roboto-v20-latin_cyrillic-300.woff') format('woff');
 }
 
-/* roboto-regular - latin_cyrillic */
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   src: local('Roboto'), local('Roboto-Regular'),
-    url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'),
-    /* Super Modern Browsers */
-    url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'),
-    /* Modern Browsers */
+    url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff');
 }
 
-/* roboto-500 - latin_cyrillic */
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   src: local('Roboto Medium'), local('Roboto-Medium'),
-    url('../fonts/roboto-v20-latin_cyrillic-500.woff2') format('woff2'),
-    /* Super Modern Browsers */
-    url('../fonts/roboto-v20-latin_cyrillic-500.woff') format('woff'),
-    /* Modern Browsers */
+    url('../fonts/roboto-v20-latin_cyrillic-500.woff2') format('woff2'), url('../fonts/roboto-v20-latin_cyrillic-500.woff') format('woff');
 }
 
-/* roboto-700 - latin_cyrillic */
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   src: local('Roboto Bold'), local('Roboto-Bold'),
-    url('../fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'),
-    /* Super Modern Browsers */
-    url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff'),
-    /* Modern Browsers */
+    url('../fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'), url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff');
 }
 
-/* roboto-900 - latin_cyrillic */
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
   src: local('Roboto Black'), local('Roboto-Black'),
-    url('../fonts/roboto-v20-latin_cyrillic-900.woff2') format('woff2'),
-    /* Super Modern Browsers */
-    url('../fonts/roboto-v20-latin_cyrillic-900.woff') format('woff'),
-    /* Modern Browsers */
+    url('../fonts/roboto-v20-latin_cyrillic-900.woff2') format('woff2'), url('../fonts/roboto-v20-latin_cyrillic-900.woff') format('woff');
 }
 
 html {
@@ -1084,7 +1060,7 @@ address {
   .footer__navigation {
     margin-bottom: 30px;
     flex-grow: 1;
-    min-width: none;
+    min-width: auto;
   }
 
   .footer__adress {
@@ -1385,8 +1361,8 @@ address {
 
 
 
-.popup-container {
-  display: flex;
+.popup__container {
+  display: none;
   align-items: center;
   padding: 0 20px;
   z-index: 20;
@@ -1489,7 +1465,6 @@ address {
 .popup {
   position: relative;
   z-index: 30;
-  display: none;
 }
 
 .sr-only {
@@ -1503,4 +1478,32 @@ address {
   white-space: nowrap;
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
+}
+
+.popup__container-send-succeed__item {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding: 14px;
+    border-radius: 5px;
+    z-index: 52;
+    position: relative;
+    left: 0;
+    margin-top: 20px;
+    right: 0;
+    background-image: linear-gradient(45deg, #ff8f5a, #ff2f96);
+    color: white;
+    box-shadow: 6px 10px 14px -4px rgba(0, 0, 0, 0.3);
+}
+
+.popup__container-send-succeed {
+  display: none;
+    width: 30%;
+    max-width: 500px;
+    min-width: 270px;
+    position: fixed;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    z-index: 52;
 }
