@@ -1,3 +1,9 @@
+import styles from "../css/style.css";
+import $ from "jquery";
+import {mask} from "../js/jquery.maskedinput.min";
+import Swiper from "../js/swiper-bundle.min.js";
+import stylesSwiper from "../css/swiper-bundle.min.css";
+
 $(function () {
   $('.header__button--call, .footer__button--button-call').click(function () {
     $(".popup__container").css("display", "flex")
@@ -56,6 +62,8 @@ $(function () {
   });
   $('.elements').addClass('elements_active');
   let mySwiper = new Swiper('.slider__wrapper', {
+    observer: true,
+    observeParents: true,
     slidesPerView: 1,
     spaceBetween: 20,
     breakpoints: {

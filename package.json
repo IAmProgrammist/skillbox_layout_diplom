@@ -1,15 +1,36 @@
 {
-  "name": "startproject",
-  "version": "1.0.0",
-  "description": "It's the starting template.",
-  "main": "gulpfile.js",
-  "author": "Ivan Kazantsev",
-  "license": "ISC",
-  "scripts": {
-    "dev": "gulp dev"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.24.7",
-    "gulp": "^4.0.0"
-  }
+   "name": "skillbox_layout_diplom",
+   "version": "1.0.0",
+   "description": "This is diplom layout",
+   "main": "scripts.js",
+   "author": "Ivan Kazantsev",
+   "license": "MIT",
+   "scripts": {
+      "build": "webpack"
+   },
+   "devDependencies": {
+      "@babel/core": "^7.11.4",
+      "@babel/preset-env": "^7.11.0",
+      "@babel/preset-react": "^7.10.4",
+      "babel-loader": "^8.1.0",
+      "css-loader": "^4.2.2",
+      "file-loader": "^6.0.0",
+      "html-loader": "^1.3.0",
+      "mini-css-extract-plugin": "^0.11.0",
+      "style-loader": "^1.2.1",
+      "webpack": "^4.44.1",
+      "webpack-cli": "^3.3.12",
+      "webpack-dev-server": "^3.11.0"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/IAmProgrammist/skillbox_layout_diplom.git"
+   },
+   "bugs": {
+      "url": "https://github.com/IAmProgrammist/skillbox_layout_diplom/issues"
+   },
+   "homepage": "https://github.com/IAmProgrammist/skillbox_layout_diplom#readme",
+   "dependencies": {
+      "jquery": "^3.5.1"
+   }
 }
