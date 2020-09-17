@@ -20,31 +20,29 @@
 
 <body>
   <div class="popup">
-    <div class="popup__container-send-succeed">
-      <div class="popup__container-send-succeed__item">
+    <div class="popup__container-send--succeed">
+      <div class="popup__item-send--succeed">
         Заявка успешно отправлена! Ждите ответа
       </div>
     </div>
-    <div class="popup__container">
       <div class="popup__container">
         <div class="popup__item">
-          <button class="item__button-close button" title="Закрыть"></button>
-          <h2 class="item__title">Введите Ваши данные</h2>
-          <form class="item__form" action="https://echo.htmlacademy.ru/" method="post" enctype="multipart/form-data">
-            <label class="item__label sr-only" for="name-input">Ваше ФИО</label>
-            <input class="item__input item__input--name" id="name-input" type="text" name="name" required placeholder="* Ваше ФИО">
-            <label class="item__label sr-only" for="email-input">Ваша почта</label>
-            <input class="item__input item__input--email" id="email-input" type="email" name="email" required placeholder="* Ваша почта">
-            <label class="item__label sr-only" for="phone-input">Ваш номер телефона</label>
-            <input class="item__input item__input--phone" id="phone-input" type="tel" name="phone" required placeholder="* Ваш номер телефона">
-            <button type="submit" class="button item__button">Отправить</button>
+          <button class="button popup__button--close" title="Закрыть"></button>
+          <h2 class="popup__title">Введите Ваши данные</h2>
+          <form class="form" action="https://echo.htmlacademy.ru/" method="post" enctype="multipart/form-data">
+            <label class="form__label sr-only" for="name-input">Ваше ФИО</label>
+            <input class="form__input form__input--name" id="name-input" type="text" name="name" required placeholder="* Ваше ФИО">
+            <label class="form__label sr-only" for="email-input">Ваша почта</label>
+            <input class="form__input form__input--email" id="email-input" type="email" name="email" required placeholder="* Ваша почта">
+            <label class="form__label sr-only" for="phone-input">Ваш номер телефона</label>
+            <input class="form__input form__input--phone" id="phone-input" type="tel" name="phone" required placeholder="* Ваш номер телефона">
+            <button type="submit" class="button form__button">Отправить</button>
           </form>
         </div>
       </div>
-    </div>
   </div>
   <header class="header container">
-    <button class="header__toggle" aria-label="Открыть меню"></button>
+    <button class="header__button--toggle" aria-label="Открыть меню"></button>
     <nav class="header__menu menu">
       <ul class="menu__list">
         <li class="menu__item">
@@ -59,75 +57,75 @@
       </ul>
     </nav>
 
-    <a class="adress__phone" href="tel:+74999955577">+7 (499) 995-55-77</a>
+    <a class="header__adress--phone" href="tel:+74999955577">+7 (499) 995-55-77</a>
 
-    <button class="button button-call"></button>
+    <button class="button header__button header__button--call"></button>
 
   </header>
   <main>
     <section class="start-screen">
-      <div class="start-screen--elements container" aria-hidden="true">
+      <div class="elements elements--start-screen container" aria-hidden="true">
         <span class="elements__item elements__item--1"></span>
         <span class="elements__item elements__item--2"></span>
         <span class="elements__item elements__item--3"></span>
         <span class="elements__item elements__item--4"></span>
         <span class="elements__item elements__item--5"></span>
       </div>
-      <div class="start-screen--content container">
-        <div class="content--title">
-          <h1 class="content__title">Дмитрий Алексеев</h1>
-          <p class="content__desc">Frontend-разработчик и веб-верстальщик</p>
-          <button class="content__button button">Узнать больше</button>
+      <div class="start-screen__content container">
+        <div class="start-screen__main-content">
+          <h1 class="start-screen__title">Дмитрий Алексеев</h1>
+          <p class="start-screen__desc">Frontend-разработчик и веб-верстальщик</p>
+          <button class="start-screen__button button">Узнать больше</button>
         </div>
-        <div class="content--photo-wrapper">
-          <img class="photo" src="img/developer.png" alt="Дмитрий Алексеев, Frontend-разработчик и веб-верстальщик">
+        <div class="start-screen__photo-wrapper">
+          <img class="start-screen__photo" src="img/developer.png" alt="Дмитрий Алексеев, Frontend-разработчик и веб-верстальщик">
         </div>
 
       </div>
     </section>
 
     <section class="what-i-do container" id="Услуги">
-      <h2 class="h h--2 what-i-do__work-title">Что я делаю</h2>
+      <h2 class="what-i-do__work-title">Что я делаю</h2>
       <ul class="what-i-do__items-of-work">
-        <li class="what-i-do__item-of-work computer ">
+        <li class="what-i-do__item-of-work what-i-do__item-of-work--computer ">
           Вёрстка лендинг-страниц и сайтов любой сложности
         </li>
-        <li class="what-i-do__item-of-work device ">
+        <li class="what-i-do__item-of-work what-i-do__item-of-work--device ">
           Адаптивная вёрстка под все браузеры и устройства
         </li>
-        <li class="what-i-do__item-of-work language ">
+        <li class="what-i-do__item-of-work what-i-do__item-of-work--language ">
           Frontend-разработка и программирование
         </li>
-        <li class="what-i-do__item-of-work programming ">
+        <li class="what-i-do__item-of-work what-i-do__item-of-work--programming ">
           Исправление и доработка существующей вёрстки
         </li>
       </ul>
-      <button class="what-price button">Узнать стоимость</button>
+      <button class="button what-i-do__button what-i-do__button--what-price">Узнать стоимость</button>
     </section>
     <section class="portfolio container" id="Портфолио">
-      <h2 class="portfolio--title h h--2">Примеры моих работ</h2>
+      <h2 class="portfolio__title">Примеры моих работ</h2>
       <div class="slider container">
         <div class="slider__wrapper">
           <ul class="slider__list">
             <li class="slider__item">
-              <img class="item__img" src="img/item-1.jpg" alt="Умею скачивать картинки с интернета">
-              <span class="item__desc">Умею скачивать картинки с интернета</span>
+              <img class="slider__img" src="img/item-1.jpg" alt="Умею скачивать картинки с интернета">
+              <span class="slider__desc">Умею скачивать картинки с интернета</span>
             </li>
             <li class="slider__item">
-              <img class="item__img" src="img/item-2.jpg" alt="Очень много картинок...">
-              <span class="item__desc">Очень много картинок...</span>
+              <img class="slider__img" src="img/item-2.jpg" alt="Очень много картинок...">
+              <span class="slider__desc">Очень много картинок...</span>
             </li>
             <li class="slider__item">
-              <img class="item__img" src="img/item-3.jpg" alt="Много...">
-              <span class="item__desc">Много...</span>
+              <img class="slider__img" src="img/item-3.jpg" alt="Много...">
+              <span class="slider__desc">Много...</span>
             </li>
             <li class="slider__item">
-              <img class="item__img" src="img/item-4.jpg" alt="Ооочень много!">
-              <span class="item__desc">Ооочень много!</span>
+              <img class="slider__img" src="img/item-4.jpg" alt="Ооочень много!">
+              <span class="slider__desc">Ооочень много!</span>
             </li>
             <li class="slider__item">
-              <img class="item__img" src="img/item-5.jpg" alt="Ещё больше!!!">
-              <span class="item__desc">Ещё больше!!!</span>
+              <img class="slider__img" src="img/item-5.jpg" alt="Ещё больше!!!">
+              <span class="slider__desc">Ещё больше!!!</span>
             </li>
           </ul>
 
@@ -138,7 +136,7 @@
           <div class="slider__pagination paginator" aria-hidden="true"></div>
         </div>
       </div>
-      <button class="what-price button">Узнать стоимость</button>
+      <button class="button portfolio__button portfolio__button--what-price">Узнать стоимость</button>
 
     </section>
 
@@ -147,7 +145,7 @@
         <h2 class="prices-and-time__title-time h h--2">Адаптивная вёрстка под все устройства и браузеры от 1000 рублей всего за 4 часа.*</h2>
         <p class="prices-and-time__small-desc">* Срок и стоимость могут отличаться от заявленных и расчитываются индивидуально, в зависимости от сложности задач.</p>
       </div>
-      <div class="prices-and-time--elements container" aria-hidden="true">
+      <div class="elements elements--prices-and-time container" aria-hidden="true">
         <span class="elements__item elements__item--1"></span>
         <span class="elements__item elements__item--2"></span>
         <span class="elements__item elements__item--3"></span>
@@ -159,32 +157,32 @@
   <footer class="footer">
     <div class="footer__container container">
       <nav class="footer__navigation">
-        <ul class="navigation__items">
-          <li class="navigation__item"><a class="navigation__link" href="#Услуги">Услуги</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#Портфолио">Портфолио</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="#Стоимость">Стоимость</a></li>
+        <ul class="footer__nav-items">
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#Услуги">Услуги</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#Портфолио">Портфолио</a></li>
+          <li class="footer__nav-item"><a class="footer__nav-link" href="#Стоимость">Стоимость</a></li>
         </ul>
       </nav>
-      <address class="footer__adress">
-        <ul class="adresses__list">
-          <li class="adresses__item"><a class="adresses__contact" href="tel:+74999955577"><span class="phone-icon"></span>+7 (499) 995-55-77</a></li>
-          <li class="adresses__item"><a class="adresses__contact" href="mailto:dmitriy@alekseev.com"><span class="mail-icon"></span>dmitriy@alekseev.com</a>
+      <address class="footer__address">
+        <ul class="footer__address-list">
+          <li class="footer__address-item"><a class="footer__address-contact" href="tel:+74999955577"><span class="footer__iconfont footer__iconfont--phone-icon"></span>+7 (499) 995-55-77</a></li>
+          <li class="footer__address-item"><a class="footer__address-contact" href="mailto:dmitriy@alekseev.com"><span class="footer__iconfont footer__iconfont--mail-icon"></span>dmitriy@alekseev.com</a>
           </li>
         </ul>
       </address>
-      <div class="contacts">
-        <button class="button contacts__button-call">Заказать звонок</button>
+      <div class="footer__contacts">
+        <button class="button footer__button footer__button--button-call">Заказать звонок</button>
         <ul class="footer__socials">
-          <li class="socials__item"><a class="socials__link socials__link--vk" href="http://www.vk.com" target="_blank"></a></li>
-          <li class="socials__item"><a class="socials__link socials__link--fb" href="http://www.facebook.com" target="_blank"></a></li>
-          <li class="socials__item"><a class="socials__link socials__link--tw" href="http://www.twitter.com" target="_blank"></a></li>
-          <li class="socials__item"><a class="socials__link socials__link--in" href="http://www.instagram.com" target="_blank"></a></li>
+          <li class="footer__socials-item"><a class="footer__socials-link footer__socials-link--vk" href="http://www.vk.com" target="_blank"></a></li>
+          <li class="footer__socials-item"><a class="footer__socials-link footer__socials-link--fb" href="http://www.facebook.com" target="_blank"></a></li>
+          <li class="footer__socials-item"><a class="footer__socials-link footer__socials-link--tw" href="http://www.twitter.com" target="_blank"></a></li>
+          <li class="footer__socials-item"><a class="footer__socials-link footer__socials-link--in" href="http://www.instagram.com" target="_blank"></a></li>
         </ul>
       </div>
     </div>
-    <p class="footer__license">
+    <small class="footer__license">
       @ Дмитрий Алексеев 2016-2020
-    </p>
+    </small>
   </footer>
 
 </body>
